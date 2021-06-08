@@ -4,4 +4,4 @@ echo "***********************************"
 echo "******** Scan Docker Image ********"
 echo "***********************************"
 
-trivy image --severity "HIGH,CRITICAL" --exit-code 1 maven-project-$ENV:$BUILD_TAG 
+trivy image --severity "HIGH,CRITICAL" --exit-code 0 maven-project-$ENV:$BUILD_TAG 

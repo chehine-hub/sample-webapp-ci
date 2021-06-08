@@ -11,7 +11,6 @@ pipeline {
         stage('Build Maven') {
             steps { sh './stages/maven/mvn.sh mvn -B -DskipTests -Dversion=$BUILD_TAG clean package' }}
         
- 
         stage('Test Maven') {
             steps { sh './stages/maven/mvn.sh mvn test -Dversion=$BUILD_TAG' }}
 

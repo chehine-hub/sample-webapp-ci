@@ -1,6 +1,7 @@
 version: '3'
 services:
   jenkins:
+    restart: always
     container_name: jenkins
     image: jenkins/jenkins
     build:
